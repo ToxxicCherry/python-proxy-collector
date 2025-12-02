@@ -1,0 +1,18 @@
+headers = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
+    'cache-control': 'max-age=0',
+    'dnt': '1',
+    'priority': 'u=0, i',
+    'sec-ch-ua': '"Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'sec-gpc': '1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
+    # 'cookie': 'sid=JV86pbTaMprcb-yTwpPqWs-7seup%2C-j8QL89F1fiPe9H9C6E7C09m1L0Zk91XAtK-0CLyX1DXDLe%2C5NTbj38BsFfZbdYGhM4rrQV2cyNmWb6IIkp8YPCjCdRD63bIqjX.b800af02a5d90cf72927d545e9f7cbebf6c1ec32d12a1f23a4c3ba51a89f0961; sec=1764694296-7eb0987a385063b0f7866c8ad8bea6e3; cookiesDisclaimer=accept',
+}

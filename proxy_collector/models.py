@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 class Proxy(BaseModel):
     ip: str
-    port: int
+    port: str
     protocol: str = 'http'
 
     def as_url(self):
