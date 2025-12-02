@@ -2,9 +2,9 @@ import requests
 import base64
 from bs4 import BeautifulSoup
 from proxy_collector.models import Proxy
-from req_data import headers
+from proxy_collector.collectors.req_data import headers
 
-def parse_proxies(html) -> list[Proxy] | None:
+def parse_proxies(html: str) -> list[Proxy] | None:
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find('tbody')
     try:
@@ -20,7 +20,7 @@ def parse_proxies(html) -> list[Proxy] | None:
         port = string.find('td', {'data-port': True}).get('data-port')
         port = base64.b64decode(port).decode()
 
-        protocol = string.find_all('td')[3].text
+        protocol = string.find_all('td')[3].find('a').text
 
         proxies.append(
             Proxy(
@@ -48,11 +48,5 @@ def collect_advanced_name() -> list[Proxy]:
 
     return result
 
-
-
-
-
 collect_advanced_name()
-
-
 
